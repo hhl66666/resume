@@ -1,4 +1,3 @@
-# skyvow.github.io
 
 基于 React + React-router + ES6 前端项目
 
