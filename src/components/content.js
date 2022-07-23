@@ -17,7 +17,6 @@ class Content extends React.Component {
         fetch('https://api.github.com/users/skyvow/repos')
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 if (!data.message) {
                     this.setState({
                         publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
@@ -171,7 +170,7 @@ class Content extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail" id="publications">
+                        {/* <div className="detail" id="publications">
                             <div className="icon">
                                 <i className="fs-lg icon-newspaper"></i><span className="mobile-title">作品展示</span>
                             </div>
@@ -202,7 +201,7 @@ class Content extends React.Component {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="detail" id="skills">
                             <div className="icon">
                                 <i className="fs-lg icon-tools"></i><span className="mobile-title">技能评价</span>

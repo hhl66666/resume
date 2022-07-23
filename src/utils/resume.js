@@ -1,89 +1,72 @@
 export default {
     'basics': {
         'position': 'Web 前端工程师',
-        'name': '郭海龙',
+        'name': '何惠林',
         'gender': '男',
         'age': '28',
         'worklife': '3',
-        'label': '我是一个小胖子，没事就摸肚子',
-        'picture': 'http://www.lgstatic.com/i/image/M00/A1/9D/CgqKkVioBICAXXVyAABFXV8M2hw21.jpeg',
-        'email': '724355924@qq.com',
-        'phone': '18521708248',
-        'website': 'https://github.com/skyvow',
+        'label': '爱笑，爱好看书，喜欢聊天，脚踏实地稳定向上哦',
+        'picture': '',
+        'email': '97664***5@qq.com',
+        'phone': '158700****6',
+        'website': 'https://github.com/hhl66666',
         'summary': [
-            '个人主攻 Web 前端和 NodeJS 开发，3年+前端开发经验，参与或独立开发过多个核心项目，项目类型涉及：电子商务、教育服务、企业管理、SPA 应用（PC/Moblie）等等',
-            '喜欢关注 Web 前端相关新技术（React、Angular、Vue...），对于新技术有很强的学习兴趣',
-            '喜欢折腾造轮子，有一些简单的开源项目，不定时会更新 Github 小项目 5k+ Star（https://github.com/skyvow）',
-            '热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐'
+            '自信, 乐观, 责任心强；惯于换位思考，对自己要求严格; 能够相互协作和充分的沟通',
+            '本人擅长web前端开发，熟练使用react，vue, angular(1.0)等javascript库，独立开发oa办公系统和资产动态等系统，参与平台组相关工作，现场运维等工作',
+            '热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐',
         ],
-        'location': '上海市浦东新区',
+        'location': '深圳法本有限公司',
         'profiles': [
             {
                 'network': 'github',
-                'username': 'skyvow',
-                'url': 'https://github.com/skyvow'
+                'username': 'hhl66666',
+                'url': 'https://github.com/resume'
             }
         ]
     },
     'work': [
         {
-            'company': '美味不用等（上海）信息科技股份有限公司',
+            'company': '深圳达博威科技有限公司',
             'position': 'Web 前端工程师',
             'website': '',
-            'startDate': '2017-06',
-            'endDate': '2019-01',
-            'summary': '美味不用等（上海）信息科技股份有限公司',
+            'startDate': '2019.8',
+            'endDate': '2019.8',
+            'summary': '深圳达博威科技有限公司',
             'highlights': [
-                '参与供应链产品原型需求分析及交互设计',
-                '供应链 SaaS 软件开发与维护',
-                '参与美味供应链（微信小程序）开发与维护',
-                '参与美味&招行项目对接'
+                '独立开发oa办公项目，公众服务平台子系统，资产动态监控等系统',
+                '维护npm公用组件依赖库',
+                '参与现场运维工作，与客户沟通线上异常问题，保证项目运行稳定',
+                '参与部分界面ui设计',
+                '维护老系统，开发相应功能',  
             ]
         },
         {
-            'company': '上海毅兆信息科技有限公司',
+            'company': '赣州微优网络科技有限公司',
             'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2016.04',
             'endDate': '2017-05',
-            'summary': '上海毅兆信息科技有限公司',
+            'summary': '赣州微优网络科技有限公司',
             'highlights': [
                 '根据产品需求文档，进行 Web 前端开发，前端主体框架选型，搭建基础框架',
-                '根据设计提供的设计稿编写静态页面',
-                'Javascript 数据处理、Ajax 交互开发、前端公共组件开发',
-                '负责配合后台开发人员，完成页面的交互及接口对接',
-                '负责团队的前端开发质量，提高效率，实施前后端分离',
-                '负责前端技术的完善，以用户为中心，不断尝试前端新技术，提升团队水平'
+                '独自担任ui页面设计，与产品确认业务',
+                '负责PC端，web前端页面构建和交互功能实现，配合后台开发人员完成工作'
             ]
         },
         {
-            'company': '上海连趣跑信息技术有限公司',
+            'company': '杭州千仞科技有限公司',
             'position': 'Web 前端工程师',
             'website': '',
-            'startDate': '2015.10',
-            'endDate': '2016.04',
-            'summary': '上海连趣跑信息技术有限公司',
+            'startDate': '2016.9',
+            'endDate': '2018.6',
+            'summary': '杭州千仞科技有限公司',
             'highlights': [
                 'Photoshop 对设计图进行切片',
-                '根据设计提供的设计稿编写静态页面',
+                '根据设计提供的设计稿编写静态页面,部分开发',
                 '负责配合后台开发人员，完成页面的交互及接口对接',
-                '负责网站功能模块及后台管理系统的设计'
+                '持续维护项目，功能迭代'
             ]
         },
-        {
-            'company': '上海艺术伙伴有限公司',
-            'position': 'Web 前端工程师',
-            'website': '',
-            'startDate': '2015.05',
-            'endDate': '2015.10',
-            'summary': '上海艺术伙伴有限公司',
-            'highlights': [
-                'Photoshop 对设计图进行切片',
-                'HTML5 + CSS3 编写网站页面，并保证浏览器的兼容性',
-                '负责配合后台开发人员，完成页面的交互及接口对接',
-                '负责电脑端及移动端 Web 项目的前端开发'
-            ]
-        }
     ],
     'project': [
         {
