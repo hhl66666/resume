@@ -13,7 +13,7 @@ import ProgressBarPlugin from 'progress-bar-webpack-plugin'
 import HappyPack from 'happypack'
 import os from 'os'
 import pkg from './package.json'
-// import manifest from './manifest.json'
+import manifest from './manifest.json'
 
 // 配置环境
 const ENV = process.env.NODE_ENV
@@ -145,9 +145,9 @@ const config = {
         }),
     ],
     optimization: {
-        // runtimeChunk: {
-        //     name: 'manifest'
-        // },
+        runtimeChunk: {
+            name: 'manifest'
+        },
         splitChunks: {
             chunks: 'async',
             minSize: 30000,
