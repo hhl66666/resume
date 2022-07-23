@@ -58,7 +58,7 @@ class Navbar extends React.Component {
                         <li><a href="javascript:;" onClick={() => this.scrollToAnchor('project-experience')}><i className="mr-10 icon-child"></i>项目经验</a></li>
                         <li><a href="javascript:;" onClick={() => this.scrollToAnchor('publications')}><i className="mr-10 icon-newspaper"></i>作品展示</a></li>
                         <li><a href="javascript:;" onClick={() => this.scrollToAnchor('skills')}><i className="mr-10 icon-tools"></i>技能评价</a></li>
-                        <li><a href="javascript:;" onClick={() => this.scrollToAnchor('awards')}><i className="mr-10 icon-trophy"></i>荣誉证书</a></li>
+                        <li><a href="javascript:;" onClick={() => this.scrollToAnchor('plans')}><i className="mr-10 icon-trophy"></i>荣誉证书</a></li>
                         <li><a href="javascript:;" onClick={() => this.scrollToAnchor('interests')}><i className="mr-10 icon-heart"></i>兴趣爱好</a></li>
                         <li><a href="javascript:;" onClick={() => this.scrollToAnchor('references')}><i className="mr-10 icon-thumbs-up"></i>座右铭</a></li>
                     </ul>

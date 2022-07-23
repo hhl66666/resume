@@ -1,5 +1,5 @@
-import React from 'react'
-import fetch from 'isomorphic-fetch'
+import React, { Fragment } from 'react'
+// import fetch from 'isomorphic-fetch'
 
 class Content extends React.Component {
     constructor (props) {
@@ -14,19 +14,19 @@ class Content extends React.Component {
     }
 
     getPublications() {
-        fetch('https://api.github.com/users/skyvow/repos')
-            .then(response => response.json())
-            .then(data => {
-                if (!data.message) {
-                    this.setState({
-                        publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
-                    })
-                }
-            })
+        // fetch('https://api.github.com/users/skyvow/repos')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         if (!data.message) {
+        //             this.setState({
+        //                 publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
+        //             })
+        //         }
+        //     })
     }
 
     render () {
-        const { basics, work, project, education, awards, skills, interests, references } = this.props
+        const { basics, work, project, education, plans, skills, interests, references } = this.props
         const { publications } = this.state
 
         return (
@@ -151,7 +151,7 @@ class Content extends React.Component {
                                                             <small>{n.startDate} - {n.endDate}</small>
                                                         </p>
                                                         <div className="mop-wrapper space-bottom">
-                                                            <p>技术栈：{n.summary}</p>
+                                                            <p>项目描述</p>
                                                         </div>
                                                         <ul>
                                                             {n.highlights.map((v, k) => {
@@ -162,6 +162,34 @@ class Content extends React.Component {
                                                                 )
                                                             })}
                                                         </ul>
+                                                        <div className="mop-wrapper space-bottom">
+                                                            <p>项目职责：</p>
+                                                        </div>
+                                                        <ul>
+                                                            {n.dutyList.map((v, k) => {
+                                                                return (
+                                                                    <li key={k} className="mop-wrapper">
+                                                                        <p>{v}</p>
+                                                                    </li>
+                                                                )
+                                                            })}
+                                                        </ul>
+                                                        { n.technology && n.technology.lenght ? 
+                                                            <div>
+                                                                <div className="mop-wrapper space-bottom">
+                                                                    <p>项目技术:</p>
+                                                                </div>
+                                                            <ul>
+                                                                    {n.technology.map((v, k) => {
+                                                                        return (
+                                                                            <li key={k} className="mop-wrapper">
+                                                                                <p>{v}</p>
+                                                                            </li>
+                                                                        )
+                                                                    })}
+                                                                </ul>
+                                                            </div> : null
+                                                         }
                                                     </div>
                                                 </li>
                                             )
@@ -170,7 +198,7 @@ class Content extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="detail" id="publications">
+                        <div className="detail" id="publications">
                             <div className="icon">
                                 <i className="fs-lg icon-newspaper"></i><span className="mobile-title">作品展示</span>
                             </div>
@@ -201,7 +229,7 @@ class Content extends React.Component {
                                     </ul>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         <div className="detail" id="skills">
                             <div className="icon">
                                 <i className="fs-lg icon-tools"></i><span className="mobile-title">技能评价</span>
@@ -228,15 +256,15 @@ class Content extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail" id="awards">
+                        <div className="detail" id="plans">
                             <div className="icon">
-                                <i className="fs-lg icon-trophy"></i><span className="mobile-title">荣誉证书</span>
+                                <i className="fs-lg icon-trophy"></i><span className="mobile-title">学习计划</span>
                             </div>
                             <div className="info">
-                                <h4 className="title text-uppercase">荣誉证书</h4>
+                                <h4 className="title text-uppercase">学习计划</h4>
                                 <div className="content">
                                     <ul className="list-unstyled clear-margin">
-                                        {awards.map((n, i) => {
+                                        {plans.map((n, i) => {
                                             return (
                                                 <li key={i} className="card card-nested">
                                                     <div className="content">
