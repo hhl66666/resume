@@ -1,4 +1,5 @@
 import React from 'react'
+import head from '../assets/image/head.jpeg';
 import classNames from 'classnames'
 
 class SiderBar extends React.Component {
@@ -7,7 +8,6 @@ class SiderBar extends React.Component {
     }
 
     render () {
-        const picture = 'https://s.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=100&amp;r=pg&amp;d=mm'
         const { basics, languages } = this.props
 
         return (
@@ -15,7 +15,7 @@ class SiderBar extends React.Component {
                 <div className="card profile-card">
                     <span className="profile-pic-container">
                         <div className="profile-pic">
-                            <img className="media-object img-circle center-block" src={basics.picture || picture} />
+                            <img className="media-object img-circle center-block" src={head} />
                         </div>
                         <div className="name-and-profession text-center">
                             <h3><b>{basics.name}</b></h3>
@@ -44,6 +44,10 @@ class SiderBar extends React.Component {
                         <div className="detail">
                             <span className="icon"><i className="icon fs-lg icon-link"></i></span>
                             <span className="info"><a href={basics.website} target="_blank">{basics.website}</a></span>
+                        </div>
+                        <div className="detail">
+                            <span className="icon"><i className="icon fs-lg icon-link"></i></span>
+                            <span className="info"><span>{basics.blob}</span></span>
                         </div>
                         <div className="detail">
                             <span className="icon" title="Languages I speak"><i className="icon fs-lg icon-language"></i></span>

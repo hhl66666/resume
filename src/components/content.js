@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react'
-// import fetch from 'isomorphic-fetch'
+import React, { Fragment } from 'react';
+
+import fetch from 'isomorphic-fetch'
 
 class Content extends React.Component {
     constructor (props) {
@@ -14,15 +15,15 @@ class Content extends React.Component {
     }
 
     getPublications() {
-        // fetch('https://api.github.com/users/skyvow/repos')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         if (!data.message) {
-        //             this.setState({
-        //                 publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
-        //             })
-        //         }
-        //     })
+        fetch('https://api.github.com/users/hhl66666/repos')
+            .then(response => response.json())
+            .then(data => {
+                if (!data.message) {
+                    this.setState({
+                        publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
+                    })
+                }
+            })
     }
 
     render () {
@@ -147,9 +148,11 @@ class Content extends React.Component {
                                                             </h4>
                                                             <p className="header-text">{n.position}</p>
                                                         </div>
+                                                        <br></br>
                                                         <p className="text-muted">
                                                             <small>{n.startDate} - {n.endDate}</small>
                                                         </p>
+                                                        <br></br>
                                                         <div className="mop-wrapper space-bottom">
                                                             <p>项目描述</p>
                                                         </div>
@@ -162,9 +165,11 @@ class Content extends React.Component {
                                                                 )
                                                             })}
                                                         </ul>
+                                                        <br></br>
                                                         <div className="mop-wrapper space-bottom">
                                                             <p>项目职责：</p>
                                                         </div>
+
                                                         <ul>
                                                             {n.dutyList.map((v, k) => {
                                                                 return (
@@ -174,6 +179,7 @@ class Content extends React.Component {
                                                                 )
                                                             })}
                                                         </ul>
+                                                        <br></br>
                                                         { n.technology && n.technology.lenght ? 
                                                             <div>
                                                                 <div className="mop-wrapper space-bottom">

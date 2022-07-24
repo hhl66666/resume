@@ -10,6 +10,7 @@ export default {
         'email': '976*******5@qq.com',
         'phone': '1587******6',
         'website': 'https://github.com/hhl66666',
+        'blob': '掘金：一道防线',
         'summary': [
             '自信, 乐观, 责任心强；惯于换位思考，对自己要求严格; 能够相互协作和充分的沟通',
             '本人擅长web前端开发，熟练使用react，vue, angular(1.0)等javascript库，独立开发oa办公系统和资产动态等系统，参与平台组相关工作，现场运维等工作',
@@ -25,6 +26,22 @@ export default {
         ]
     },
     'work': [
+        {
+            'company': 'xxx大公司',
+            'position': 'Web 中高前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'xxx大公司',
+            'highlights': [
+                '监控维护',
+                '优化性能',
+                '项目升级',
+                '无障碍开发',
+                '维护npm公用组件依赖库，独自开发客服图标',
+                '开发相应功能', 
+            ]
+        },
         {
             'company': '深圳达博威科技有限公司',
             'position': 'Web 前端工程师',
@@ -70,6 +87,168 @@ export default {
     ],
     'project': [
         {
+            'organization': '商城项目',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '负责项目的价值迭代，发现用户的痛点，用户价值，设计相关的界面，给用户带来新的页面购买体验，给公司带来效益',
+            ],
+            'dutyList': [
+                '负责功能首页导航，首页配件，商详发货地址，商详配件等功能',
+                '抽离客户图标，单独项目维护',
+                '无障碍页面设计'
+            ],
+            'technology': [
+                'github cicd',
+                'rullop',
+                'wepack4.X',
+                'eslint',
+                'ts',
+                'sonarCode',
+                'jest'
+            ],
+        },
+        {
+            'organization': 'quark',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '商城ui组件库',
+            ],
+            'dutyList': [
+                '负责项目ui组件库维护，提供无障碍功能',
+            ],
+            'technology': [
+                'github cicd',
+                'wepack4.X',
+                'eslint',
+                'ts',
+            ],
+        },
+        {
+            'organization': '商城移动端H5项目',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '负责项目的价值迭代，发现用户的痛点，用户价值，设计相关的界面，给用户带来新的页面购买体验，给公司带来效益',
+            ],
+            'dutyList': [
+                '负责功能移动端首页导航，移动端首页配件，移动端商详发货地址，移动端商详配件等功能',
+                '负责项目编译速度的优化，更改项目打包器',
+                'cicd项目调整'
+            ],
+            'technology': [
+                'github cicd',
+                'wepack4.X',
+                'eslint',
+                'ts',
+                'sonarCode',
+                'jest',
+                'koa',
+                'express',
+                'react服务端渲染'
+            ],
+        },
+        {
+            'organization': '结账页项目',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '主要负责客户的订单地址的填写的业务，主要业务有非登入购买，登录购买，分不同国家税不同展示等',
+              
+            ],
+            'dutyList': [
+                '负责功能相关优化，税后开发，邮件模板的开发',
+                '添加监控白名单，上报各种加密异常',
+                '接入部分订单信息上传加密方式'
+            ],
+            'technology': [
+                'github cicd',
+                'wepack4.X',
+                'eslint',
+                'ts',
+                'sonarCode',
+                'jest',
+                'koa',
+                'react服务端渲染',
+                '...'
+            ],
+        },
+        {
+            'organization': 'etd,eta后台',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '主要控制商城分仓规则，货的数量，更具不同的国家控制不同的发货时间等',
+            ],
+            'dutyList': [
+                '页面开发迭代'
+            ],
+            'technology': [
+                'umjs',
+                'ts',
+                'jest',
+                'eslint'
+            ],
+        },
+        {
+            'organization': '商城支付项目',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '商详订单支付',
+            ],
+            'dutyList': [
+                '接入其他的加密方式',
+                'ci-cd的更改，实现代码部分上传不同的地区'
+            ],
+            'technology': [
+                'webpack5',
+                'ts',
+                'eslint',
+                'jest',
+            ],
+        },
+        {
+            'organization': '用户订单系统',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2021',
+            'endDate': '2022',
+            'summary': 'web 中高级开发',
+            'highlights': [
+                '用户平常的下单，购买记录，退货等系统',
+            ],
+            'dutyList': [
+                '项目维护',
+                '功能迭代，解决用户的痛点，解决公司债务，应相关法律罚款问题，'
+            ],
+            'technology': [
+                'webpack',
+                'ts',
+                'eslint',
+                'jest',
+            ],
+        },
+        {
             'organization': '智慧城市portal',
             'position': 'Web 前端工程师',
             'website': '',
@@ -84,6 +263,7 @@ export default {
                 '负责npm包平台组件包维护'
             ],
             'technology': [
+              
             ],
         },
         {
@@ -170,6 +350,7 @@ export default {
     'education': [
         {
             'institution': '江西职业电力技术学院',
+            'studyType': '大专',
             'area': '新能源',
             'startDate': '2013-09',
             'endDate': '2016-06',
@@ -177,7 +358,8 @@ export default {
             'courses': [
                 '风能运用技术',
                 '太阳能运用技术',
-                '电气自动化'
+                '电气自动化',
+                '计算机基础',
             ]
         }
     ],
@@ -199,7 +381,7 @@ export default {
         {
             'name': 'resume.github.io',
             'publisher': 'yidaofanxian',
-            'releaseDate': '2017-4',
+            'releaseDate': '2022-7',
             'website': 'https://github.com/resume/resume.github.io',
             'summary': 'My resume - 基于 React + React-router + ES6 前端项目'
         }
@@ -217,6 +399,12 @@ export default {
                 'React',
                 'ts',
                 'vue',
+                'node',
+                'express',
+                'koa',
+                'github cicd',
+                '无障碍开发',
+                '微信小程序',
                 'ntko软行控件在线预览',
                 'wps加载项功能实现在线编辑word',
 
@@ -249,7 +437,7 @@ export default {
     'references': [
         {
             'name': '个人名言',
-            'reference': '伟大的作品，都是从微小的事开始做起的'
-        }
+            'reference': '伟大的作品，都是从微小的事开始做起的; 而且要热情，阳光向上。-- v --'
+        },
     ]
 }
