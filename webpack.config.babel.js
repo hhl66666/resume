@@ -114,7 +114,7 @@ const config = {
                 ],
             },
             {
-                test: /\.(jpe?g|png|gif|svg)\??.*$/,
+                test: /\.(jpe?g|png|gif|svg|map3)\??.*$/,
                 use: 'url-loader?limit=8192&name=' + assetsPath + '[hash].[ext]',
             },
             {

@@ -3,7 +3,7 @@ import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 import { hot } from 'react-hot-loader'
 import SiderBar from '../components/siderbar'
-import Footer from '../components/footer'
+// import Footer from '../components/footer'
 import Content from '../components/content'
 import Navbar from '../components/navbar'
 import resume from '../utils/resume'
@@ -66,7 +66,8 @@ class Main extends React.Component {
                     <Navbar renderHTMLtoPDF={this.renderHTMLtoPDF} />
                     <SiderBar {...resume} />
                     <Content {...resume} />
-                    <Footer />
+                    {/* <Footer /> */}
+                    <audio id="audio" preload="auto" autobuffer="autobuffer" loop="loop" src="../asset/audio/daoying.mp3"></audio>
                 </div>
             </div>
         )
